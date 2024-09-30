@@ -1,0 +1,61 @@
+@use 'reset';
+@use 'background';
+@use 'mixins';
+
+
+.encabezado{
+    @include mixins.flex;
+}
+
+.titulo{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.contenido{
+    
+    margin-top: 3em;
+    background-color: rgba(26, 22, 8, 0.5);
+    margin: auto;
+    max-width: 70%;
+    border-radius: 10px;
+    backdrop-filter: blur(0.4rem);
+    @include mixins.flex;
+
+    .contenido-contenedor{
+        @include mixins.flex;
+    }
+}
+
+.btn{
+    background-color:cornflowerblue;
+    border-color: cornflowerblue;
+    padding: 0.3em;
+    border-radius: 5em;
+    font-size: 0.7em;
+    box-shadow: 0px 0px 1em 0.2em rgba(0, 0, 0, 0.7);
+    margin-top: 0.7em;
+    margin-top: 0.4em;
+}
+
+.input{
+    margin-top: 0.7em;
+    color: black;
+}
+
+.textojs{
+    margin-top: 0.7em;
+}
+
+#segundoEquipo{
+    @include mixins.flex;
+}
+
+#cantidadJugadores{
+    margin-top: 0.7em;
+}
+
+#jugadores{
+    @include mixins.flex;
+}

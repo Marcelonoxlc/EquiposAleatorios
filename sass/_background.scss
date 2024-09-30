@@ -1,0 +1,11 @@
+body{
+    background-image: url(../images/pexels-grizzlybear-399187.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:320px){
+    body{
+        background-repeat:inherit;
+    }
+}
